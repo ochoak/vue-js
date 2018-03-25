@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- Asociamos la App que creamos en Vue.JS -->
+    <div id="app">
+        <ol>
+            <!-- Usamos el componente que hemos definido en Vue.JS -->
+            <todo-item v-for="item in myList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+
+    <!-- Esta es la única linea necesaria para cargar Vue.JS en nuestro proyecto -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Cargamos el fichero que contiene nuestra App en Vue.JS -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
