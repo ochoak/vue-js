@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="calculator" class="calculator">
+          <div class="calculator__display">{{ results }}</div>
+    
+          <div class="calculator__keys">
+            <button class="key--operator" data-action="add">+</button>
+            <button class="key--operator" data-action="subtract">-</button>
+            <button class="key--operator" data-action="multiply">&times;</button>
+            <button class="key--operator" data-action="divide">÷</button>
+            <button @click="add('7')">7</button>
+            <button  @click="add('8')">8</button>
+            <button  @click="add('9')">9</button>
+            <button  @click="add('4')">4</button>
+            <button  @click="add('5')">5</button>
+            <button  @click="add('6')">6</button>
+            <button  @click="add('1')">1</button>
+            <button  @click="add('2')">2</button>
+            <button  @click="add('3')">3</button>
+            <button  @click="add('0')">0</button>
+            <button data-action="decimal">.</button>
+            <button @click="clear">AC</button>
+            <button class="key--equal" data-action="calculate">=</button>
+          </div>
+        </div>
+      </div>
+    <script src="js/main.js"></script>  
+</body>
+</html>
